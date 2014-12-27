@@ -40,8 +40,3 @@ PSYCHO - Tainted Archives`When you draw a card, lose 2 life.`Chaos: Target playe
 Inquisitor's Quarters`At the beginning of your upkeep, you may choose to Scry 4.`Chaos: Spy 4 (Look at the top 4 cards of target player's library and replace them in any order.)
 Grasp into the Future - Phenomenon`Players reveal the top 5 cards of their library may play the fifth card without paying its mana cost. 
 Reinforcements - Phenomenon`Place a number of 1/1 white Paladin tokens onto the battlefield equal to the number of lands you control. 
-
-
-
-
-
