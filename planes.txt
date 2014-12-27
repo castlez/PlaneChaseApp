@@ -11,7 +11,7 @@ Onakke Catacomb`All creatures are black and have deathtouch.`Chaos: Creatures yo
 Mutual Epiphany - Phenomenon`When you encounter Mutual Epiphany, each player draws four cards.(Then planeswalk away from this phenomenon.)
 Reality Shaping - Phenomenon`When you encounter Reality Shaping, starting with you, each player may put a permanent card from his or her hand onto the battlefield. (Then planeswalk away from this phenomenon.)
 Otaria`Instant and sorcery cards in graveyards have flashback. The flashback cost is equal to the cards mana cost. (Its owner may cast the card from his or her graveyard for its mana cost. Then he or she exiles it.)`Chaos: Take an extra turn after this one.
-Naya`You may play any number of lands on each of your turns.`Chaos: Target red, green, or white creature you control gets +1/+1 until end of turn for each land you control.
+Naya`You may play any number of lands on each of your turns.`Chaos: Target creature you control gets +1/+1 until end of turn for each land you control.
 Glimmervoid Basin`Whenever a player casts an instant or sorcery spell with a single target, he or she copies that spell for each other spell, permanent, card not on the battlefield, and/or player the spell could target. Each copy targets a different one of them.`Chaos: Choose target creature. Each player except that creatures controller puts a token thats a copy of that creature onto the battlefield.
 Bloodhill Bastion`Whenever a creature enters the battlefield, it gains double strike and haste until end of turn.`Chaos: Exile target nontoken creature you control, then return it to the battlefield under your control.
 Isle of Vesuva`Whenever a nontoken creature enters the battlefield, its controller puts a token onto the battlefield thats a copy of that creature.`Chaos: Destroy target creature and all other creatures with the same name as that creature.
@@ -29,3 +29,19 @@ Shadow Clan Canyon`All creatures in all zones (library, hands, battlefield, grav
 Chamber of the King`All creatures gain dethrone (when this creature attacks the player with the highest health it gets a +1/+1 counter).`Chaos: Switch life totals of two target players.
 Glacial Falls`All creatures have graft 3 (it comes into the battlefield with 3 +1/+1 counters. Then whenever a creatures enters the battlefield under your control you may move a +1/+1 counter from this creature to that one).`Chaos: All spells get cascade(when you play it, reveal cards from your library till you find a non land card that costs less. You may cast it without paying its mana cost)
 Silence the Heretics`All player's life totals become equal to the player with the lowest life.
+Orzhova Overlook`Players play with their hand revealed.`Chaos:You may play target spell in target player's hand without paying its mana cost.
+Spellborn Benevolence - Phenomenon`When you encounter Spellborn Benevolence, players reveal the top card of their library. They may play any number of target spells in their hand that share a type with the revealed card without paying their mana costs.(Permanents may be played as though they had Flash) 
+PSYCHO - Planar Shift - Phenomenon`The player to your right gains control of all your nonland permanents.
+PSYCHO - Misfire - Phenomenon`Each player plays a random card from their hand without paying its mana cost.
+PSYCHO - Rakdos Rum Run`Whenever you attack, you control the defending players' block steps.`Chaos: Target creature gains +5/+5 and indestructible until somebody planeswalks.
+Rakdos Confessional`When you planeswalk to Rakdos Confessional or at the beginning of your upkeep, put a torture counter on Rakdos Confessional and take damage equal to the number of torture counters.`Chaos: You gain Confess (Protection from damage dealt by torture counters)  
+Dimir Inquisition - Phenomenon`All players may reveal target card from target player's hand; that player loses life equal to its converted mana cost.
+PSYCHO - Tainted Archives`When you draw a card, lose 2 life.`Chaos: Target player draws 2 cards. 
+Inquisitor's Quarters`At the beginning of your upkeep, you may choose to Scry 4.`Chaos: Spy 4 (Look at the top 4 cards of target player's library and replace them in any order.)
+Grasp into the Future - Phenomenon`Players reveal the top 5 cards of their library may play the fifth card without paying its mana cost. 
+Reinforcements - Phenomenon`Place a number of 1/1 white Paladin tokens onto the battlefield equal to the number of lands you control. 
+
+
+
+
+
