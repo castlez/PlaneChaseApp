@@ -5,6 +5,9 @@ from colorama import Fore, Back, Style
 import tkinter
 colorama.init()
 window = tkinter.Tk()
+window.title("Planechase")
+window.geometry("300x300")
+window.wm_iconbitmap('mtg.ico')
 #Custom planechase game!
 #Programming: Jonny Castle and Ian Stout
 #Plane concepts and program design: Jonny Castle, Ian Stout and Bryan Steele
