@@ -11,28 +11,40 @@ import tkinter
 #FUNCTIONS$
 
 #displays a single plane
-def display(here, plane):
-    if(plane[0].find("Phenomenon") ==-1):
-        here.configure(text = plane[0] + '\n' + plane[1] + '\n' + plane[2])
-    else:
-        here.configure(text = plane[0] + '\n' + plane[1])
-
+def display(plane, name, desc, chaos):
+    name.configure(text = plane[0])
+    desc.configure(text = plane[1])
+    try:
+       chaos.configure(text = plane[2])
+    except IndexError:
+        chaos.configure(text = "")
+        
 #play function, takes the planes list, the used list
 #and the boolean psycho as args and plays a single plane
-def play(planes, used, psycho, here):
+def play(planes, used, psycho, name, desc, chaos):
+    if(len(planes) is 0):
+        name.configure(text = "There are no more planes")
+        desc.configure(text = "")
+        chaos.configure(text = "")
+        return
+    
     roll = random.randint(0, len(planes)-1)
-    while(planes[roll][0].find("PSYCHO")==0 and bool==False):
+    
+    while(not planes[roll][0] is not "PSYCHO" and psycho == False):
+        print("skipped a psycho")
         roll = random.randint(0, len(planes)-1)
         continue
-    display(here, planes[roll])
     
+    display(planes[roll], name, desc, chaos)
+    used.append(planes[roll])
+    planes.remove(planes[roll])
 
 #MAIN#
 #declare variables
 planes = []
 used = []
 here=[]
-psycho = False
+psycho = []
 
 #open the planes file
 file = open('planes.txt', 'r')
@@ -47,12 +59,17 @@ for line in data:
 colorama.init()
 window = tkinter.Tk()
 window.title("Planechase")
-window.geometry("900x600")
+window.geometry("600x400")
 #window.wm_iconbitmap(r'C:\Users\Jonny\Documents\Programs\Planechase_gen\PlaneChaseApp\mtg.ico')<----issues
-plane = tkinter.Label(window, text = "click roll to begin", fg="red", wraplength = 700)
-roller = tkinter.Button(window, text="Roll", fg="blue", command= lambda: play(planes, used, psycho, plane))
-plane.pack()
-roller.pack()
+name = tkinter.Label(window, text = "click roll to begin", fg="black", wraplength = 300)
+desc = tkinter.Label(window, text = "", fg="blue", wraplength = 300)
+chaos = tkinter.Label(window, text = "", fg="red", wraplength = 300)
+roller = tkinter.Button(window, text="Roll", fg="blue", command= lambda: play(planes, used, psycho, name, desc, chaos))
+roller.grid(row = 2, column = 2)
+name.pack()
+desc.pack()
+chaos.pack()
+roller.pack(side = "bottom")
 
 window.mainloop()
 
